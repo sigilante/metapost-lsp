@@ -1,0 +1,2337 @@
+{
+ "&": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Concatenation—works for paths 𝑙&𝑟 if 𝑟 starts exactly where the 𝑙 ends (string string string)"
+  ]
+ },
+ "*": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Multiplication (numeric (cmyk)color (cmyk)color)",
+   "Multiplication ((cmyk)color numeric (cmyk)color)"
+  ]
+ },
+ "**": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Exponentiation (numeric numeric numeric)"
+  ]
+ },
+ "+": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Addition ((cmyk)color (cmyk)color (cmyk)color)"
+  ]
+ },
+ "++": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Pythagorean √           addition (numeric numeric numeric)"
+  ]
+ },
+ "+-+": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Pythagorean √           subtraction (numeric numeric numeric)"
+  ]
+ },
+ "-": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Subtraction ((cmyk)color (cmyk)color (cmyk)color)",
+   "Negation (– (cmyk)color (cmyk)color)"
+  ]
+ },
+ "/": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Division ((cmyk)color numeric (cmyk)color)"
+  ]
+ },
+ "<": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Comparison operators (string string boolean)"
+  ]
+ },
+ "=": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Comparison operators (string string boolean)"
+  ]
+ },
+ ">": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Comparison operators (string string boolean)"
+  ]
+ },
+ "ASCII": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "ASCII value of first character in string (– string numeric)"
+  ]
+ },
+ "EOF": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Single null character"
+  ]
+ },
+ "abs": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Absolute value Euclidean  length (xpart 𝑟)2 + (ypart 𝑟)2 (– numeric numeric)"
+  ]
+ },
+ "addto": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Low-level command for drawing and filling"
+  ]
+ },
+ "ahangle": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Angle for arrowheads in degrees (default: 45)"
+  ]
+ },
+ "ahlength": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Size of arrowheads (default: 4bp)"
+  ]
+ },
+ "also": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "addto ⟨picture⟩ also ⟨picture⟩: low-level picture merge"
+  ]
+ },
+ "and": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Logical and (boolean boolean boolean)"
+  ]
+ },
+ "angle": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "2−argument arctangent (in degrees) (– pair numeric)"
+  ]
+ },
+ "arclength": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Arc length of a path (– path numeric)"
+  ]
+ },
+ "arctime": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Time on a path where arc length from the start reaches a given value (numeric path numeric)"
+  ]
+ },
+ "atleast": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Minimum tension: .. tension atleast 1 .."
+  ]
+ },
+ "background": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Color for unfill and undraw (usually white)"
+  ]
+ },
+ "bbox": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "A rectangular path for the bounding box (– picture path)"
+  ]
+ },
+ "bboxmargin": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Extra space allowed by bbox (default 2bp)"
+  ]
+ },
+ "beginfig": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Start figure n: beginfig(n); … endfig;"
+  ]
+ },
+ "begingroup": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Start a group; save and interim changes are undone at endgroup"
+  ]
+ },
+ "beveled": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "linejoin value for beveled joins [2]"
+  ]
+ },
+ "black": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Equivalent to (0,0,0)"
+  ]
+ },
+ "blackpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the fourth component (– cmykcolor numeric)"
+  ]
+ },
+ "blue": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Equivalent to (0,0,1)"
+  ]
+ },
+ "bluepart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the third component (– color numeric)"
+  ]
+ },
+ "boolean": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare boolean variables, or test whether an expression is a boolean",
+   "Is the expression of type boolean? (– any boolean)"
+  ]
+ },
+ "bot": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Bottom of current pen when centered at the given coordinate(s) (– numeric numeric)"
+  ]
+ },
+ "bounded": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is argument a picture with a bounding box? (– any boolean)"
+  ]
+ },
+ "bp": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One PostScript point in bp units [1]"
+  ]
+ },
+ "btex": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Typeset the following TeX up to etex and return it as a picture"
+  ]
+ },
+ "buildcycle": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Build a cyclic path (list of paths path)"
+  ]
+ },
+ "butt": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "linecap value for butt end caps [0]"
+  ]
+ },
+ "cc": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One cicero in bp units [12.79213]"
+  ]
+ },
+ "ceiling": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Least integer greater than or equal to (– numeric numeric)"
+  ]
+ },
+ "center": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Center of the bounding box (– picture pair)"
+  ]
+ },
+ "char": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Character with a given ASCII code (– numeric string)"
+  ]
+ },
+ "charcode": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The number of the current figure"
+  ]
+ },
+ "clip": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Applies a clipping path to a picture"
+  ]
+ },
+ "clipped": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is argument a clipped picture? (– any boolean)"
+  ]
+ },
+ "closefrom": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Close a file opened by readfrom"
+  ]
+ },
+ "cm": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One centimeter in bp units [28.34645]"
+  ]
+ },
+ "cmykcolor": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare cmykcolor variables, or test whether an expression is a cmykcolor",
+   "Is the expression of type cmykcolor? (– any boolean)"
+  ]
+ },
+ "color": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare color variables, or test whether an expression is a color",
+   "Is the expression of type color? (– any boolean)"
+  ]
+ },
+ "colormodel": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "What is the color model of the image object? (– image numeric)"
+  ]
+ },
+ "colorpart": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "What is the color of the image object? (– image (cmyk)color)"
+  ]
+ },
+ "contour": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "addto ⟨picture⟩ contour ⟨path⟩: low-level fill"
+  ]
+ },
+ "controls": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Explicit Bézier control points: z0 .. controls a and b .. z1"
+  ]
+ },
+ "cosd": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Cosine of angle in degrees (– numeric numeric)"
+  ]
+ },
+ "curl": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Direction specifier for path endpoints: {curl 1}"
+  ]
+ },
+ "currentpen": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Last pen picked up (for use by the draw command)"
+  ]
+ },
+ "currentpicture": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Accumulate results of draw and fill commands"
+  ]
+ },
+ "cutafter": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Left argument with part after the intersection dropped (path path path)"
+  ]
+ },
+ "cutbefore": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Left argument with part before the intersection dropped (path path path)"
+  ]
+ },
+ "cutdraw": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Draw with butt end caps"
+  ]
+ },
+ "cuttings": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Subpath cut off by last cutbefore or cutafter"
+  ]
+ },
+ "cyanpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the first component (– cmykcolor numeric)"
+  ]
+ },
+ "cycle": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Determines whether a path is cyclic (– path boolean)"
+  ]
+ },
+ "dashed": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply dash pattern to drawing command"
+  ]
+ },
+ "dashpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Dash pattern of a path in a stroked picture (– picture picture)"
+  ]
+ },
+ "dashpattern": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Create a pattern for dashed lines (on/off distances picture)"
+  ]
+ },
+ "day": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The current day of the month"
+  ]
+ },
+ "dd": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One didot point in bp units [1.06601]"
+  ]
+ },
+ "decimal": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The decimal representation (– numeric string)"
+  ]
+ },
+ "decr": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Decrement and return new value (numeric variable numeric)"
+  ]
+ },
+ "def": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Define a macro: def name(expr a)(suffix b)(text c) = … enddef"
+  ]
+ },
+ "defaultcolormodel": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The initial color model (default: 5, rgb)"
+  ]
+ },
+ "defaultfont": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Font used by label commands for typesetting strings"
+  ]
+ },
+ "defaultpen": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Numeric index used by pickup to select default pen"
+  ]
+ },
+ "defaultscale": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Font scale factor for label strings (default 1)"
+  ]
+ },
+ "delimiters": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Declare a pair of matching delimiters"
+  ]
+ },
+ "dir": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "(cos 𝜃, sin 𝜃) given 𝜃 in degrees (– numeric pair)"
+  ]
+ },
+ "direction": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "The direction of a path at a given ‘time’ (numeric path pair)"
+  ]
+ },
+ "directionpoint": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Point where a path has a given direction (pair path numeric)"
+  ]
+ },
+ "directiontime": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "‘Time’ when a path has a given direction (pair path numeric)"
+  ]
+ },
+ "ditto": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "The \" character as a string of length 1"
+  ]
+ },
+ "div": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Integer division ⌊𝑙/𝑟⌋ (numeric numeric numeric)"
+  ]
+ },
+ "dotlabel": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Mark point and draw picture nearby (suffix, picture, pair –)",
+   "Mark point and place text nearby (suffix, string, pair –)"
+  ]
+ },
+ "dotlabeldiam": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Diameter of the dot drawn by dotlabel (default 3bp)"
+  ]
+ },
+ "dotlabels": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Mark z points with their numbers (suffix, point numbers –)"
+  ]
+ },
+ "dotprod": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Vector dot product (pair pair numeric)"
+  ]
+ },
+ "doublepath": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "addto ⟨picture⟩ doublepath ⟨path⟩: low-level stroke"
+  ]
+ },
+ "down": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Downward direction vector (0, −1)"
+  ]
+ },
+ "downto": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Same as step -1 until"
+  ]
+ },
+ "draw": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Draw a line or a picture"
+  ]
+ },
+ "drawarrow": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Draw a line with an arrowhead at the end"
+  ]
+ },
+ "drawdblarrow": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Draw a line with arrowheads at both ends"
+  ]
+ },
+ "drawdot": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Draw a dot at the given point (pair –)"
+  ]
+ },
+ "drawoptions": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Set options for drawing commands (drawing options –)"
+  ]
+ },
+ "dump": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Finish the job and dump a mem file (inimpost only)"
+  ]
+ },
+ "else": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Fallback branch in an if … fi block"
+  ]
+ },
+ "elseif": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Further condition in an if … fi block"
+  ]
+ },
+ "end": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Finish the job"
+  ]
+ },
+ "enddef": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Ends a macro definition"
+  ]
+ },
+ "endfig": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Finish and ship out the current figure"
+  ]
+ },
+ "endfor": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Ends a for, forsuffixes or forever loop"
+  ]
+ },
+ "endgroup": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "End a group; restores saved variables and internals"
+  ]
+ },
+ "endinput": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Stop reading the current file at the end of this line"
+  ]
+ },
+ "epsilon": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Smallest positive MetaPost number [ 65536"
+  ]
+ },
+ "errhelp": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Declare help message for interactive mode"
+  ]
+ },
+ "errmessage": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Show error message on the terminal and enter interactive mode"
+  ]
+ },
+ "etex": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Ends a btex or verbatimtex block"
+  ]
+ },
+ "evenly": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Dash pattern for equal length dashes"
+  ]
+ },
+ "everyjob": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Token inserted at the start of every job"
+  ]
+ },
+ "exitif": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Leave the innermost loop if the boolean is true"
+  ]
+ },
+ "exitunless": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Leave the innermost loop if the boolean is false"
+  ]
+ },
+ "expandafter": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Expand the token after the next one first"
+  ]
+ },
+ "expr": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Macro parameter that receives a value"
+  ]
+ },
+ "extra_beginfig": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Commands for beginfig to scan"
+  ]
+ },
+ "extra_endfig": {
+  "kind": "variable",
+  "plain": true,
+  "docs": [
+   "Commands for endfig to scan"
+  ]
+ },
+ "false": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "The boolean value false"
+  ]
+ },
+ "fi": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Ends an if block"
+  ]
+ },
+ "filenametemplate": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Set output file name pattern (deprecated, see outputtemplate)"
+  ]
+ },
+ "fill": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Fill inside a cyclic path"
+  ]
+ },
+ "filldraw": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Draw a cyclic path and fill inside it"
+  ]
+ },
+ "filled": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is argument a filled outline? (– any boolean)"
+  ]
+ },
+ "floor": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Greatest integer less than or equal to (– numeric numeric)"
+  ]
+ },
+ "fontmapfile": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Read font map entries from file"
+  ]
+ },
+ "fontmapline": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Declare a font map entry"
+  ]
+ },
+ "fontpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Font of a textual picture component (– picture string)"
+  ]
+ },
+ "fontsize": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The point size of a font (– string numeric)"
+  ]
+ },
+ "for": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Loop: for ⟨var⟩ = ⟨list⟩ or ⟨start⟩ step ⟨inc⟩ until ⟨end⟩: … endfor"
+  ]
+ },
+ "forever": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Unbounded loop, left with exitif or exitunless"
+  ]
+ },
+ "forsuffixes": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Loop over a list of suffixes: forsuffixes s = a, b: … endfor"
+  ]
+ },
+ "fullcircle": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Circle of diameter 1 centered on (0, 0)"
+  ]
+ },
+ "glyph": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Convert a glyph of a font to contours (numeric string picture)"
+  ]
+ },
+ "green": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Equivalent to (0,1,0)"
+  ]
+ },
+ "greenpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the second component (– color numeric)"
+  ]
+ },
+ "greypart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the first (only) component (– numeric numeric)"
+  ]
+ },
+ "halfcircle": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Upper half of a circle of diameter 1"
+  ]
+ },
+ "hex": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Interpret as a hexadecimal number (– string numeric)"
+  ]
+ },
+ "hour": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The hour of the day this job started"
+  ]
+ },
+ "hppp": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The number of horizontal points per pixel for bitmap output"
+  ]
+ },
+ "identity": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Identity transformation"
+  ]
+ },
+ "if": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Conditional: if ⟨boolean⟩: … elseif ⟨boolean⟩: … else: … fi"
+  ]
+ },
+ "image": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Return picture from text (string picture)"
+  ]
+ },
+ "in": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One inch in bp units [72]"
+  ]
+ },
+ "incr": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Increment and return new value (numeric variable numeric)"
+  ]
+ },
+ "infinity": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Large positive value [4095.99998]"
+  ]
+ },
+ "infont": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Typeset string in given font (string string picture)"
+  ]
+ },
+ "inner": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Undo outer"
+  ]
+ },
+ "input": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Read a file: input ⟨filename⟩"
+  ]
+ },
+ "interim": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Make a local change to an internal variable"
+  ]
+ },
+ "intersectionpoint": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "An intersection point (path path pair)"
+  ]
+ },
+ "intersectiontimes": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Times (𝑡𝑙 , 𝑡𝑟 ) on paths 𝑙 and 𝑟 when the paths intersect (path path pair)"
+  ]
+ },
+ "interval_get_left_endpoint": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The left endpoint of an interval quantity (– numeric numeric)"
+  ]
+ },
+ "interval_get_right_endpoint": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The right endpoint of an interval quantity (– numeric numeric)"
+  ]
+ },
+ "interval_set": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Create an interval quantity (– pair numeric)"
+  ]
+ },
+ "inverse": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Invert a transformation (– transform transform)"
+  ]
+ },
+ "jobname": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The name of this job"
+  ]
+ },
+ "known": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Does argument have a known value? (– any boolean)"
+  ]
+ },
+ "label": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Draw picture near given point (suffix, picture, pair –)",
+   "Place text near given point (suffix, string, pair –)"
+  ]
+ },
+ "labeloffset": {
+  "kind": "internal",
+  "plain": true,
+  "docs": [
+   "Offset distance for labels (default 3bp)"
+  ]
+ },
+ "labels": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Draw z point numbers; no dots (suffix, point numbers –)"
+  ]
+ },
+ "left": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Leftward direction (−1, 0)"
+  ]
+ },
+ "length": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Number of components (arcs, characters, strokes, . . . ) in the argument (– path numeric)"
+  ]
+ },
+ "let": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Assign one symbolic token the meaning of another"
+  ]
+ },
+ "lft": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Left side of current pen when its center is at the given coordinate(s) (– numeric numeric)"
+  ]
+ },
+ "linecap": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "0 for butt, 1 for round, 2 for square"
+  ]
+ },
+ "linejoin": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "0 for mitered, 1 for round, 2 for beveled"
+  ]
+ },
+ "llcorner": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Lower-left corner of bounding box (– picture pair)"
+  ]
+ },
+ "loggingall": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Turn on all tracing (log file only)"
+  ]
+ },
+ "lrcorner": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Lower-right corner of bounding box (– picture pair)"
+  ]
+ },
+ "magentapart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the second component (– cmykcolor numeric)"
+  ]
+ },
+ "makepath": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Cyclic path bounding the pen shape (– pen path)"
+  ]
+ },
+ "makepen": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "A polygonal pen made from the convex hull of the path knots (– path pen)"
+  ]
+ },
+ "max": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Find the maximum (list of numerics numeric)",
+   "Find the lexicographically last string (list of strings string)"
+  ]
+ },
+ "message": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Show message string on the terminal"
+  ]
+ },
+ "mexp": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The function exp(𝑥/256) (– numeric numeric)"
+  ]
+ },
+ "min": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Find the minimum (list of numerics numeric)",
+   "Find the lexicographically first string (list of strings string)"
+  ]
+ },
+ "minute": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The minute of the hour this job started"
+  ]
+ },
+ "mitered": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "linejoin value for mitered joins [0]"
+  ]
+ },
+ "miterlimit": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Controls miter length as in PostScript"
+  ]
+ },
+ "mlog": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "The function 256 ln(𝑥) (– numeric numeric)"
+  ]
+ },
+ "mm": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One millimeter in bp units [2.83464]"
+  ]
+ },
+ "mod": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "The remainder function (– numeric numeric)"
+  ]
+ },
+ "month": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The current month (e.g, 3 ≡ March)"
+  ]
+ },
+ "mpprocset": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Create a PostScript dictionary of command abbreviations"
+  ]
+ },
+ "mpversion": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "MetaPost version number"
+  ]
+ },
+ "newinternal": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Declare new internal variables"
+  ]
+ },
+ "normaldeviate": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Choose a random number with mean 0 and standard deviation 1 (– – numeric)"
+  ]
+ },
+ "not": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Logical negation (– boolean boolean)"
+  ]
+ },
+ "nullpen": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "Empty pen"
+  ]
+ },
+ "nullpicture": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "Empty picture"
+  ]
+ },
+ "numberprecision": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Arithmetic precision in binary and decimal mode"
+  ]
+ },
+ "numbersystem": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Arithmetic mode as given on the command-line"
+  ]
+ },
+ "numeric": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare numeric variables, or test whether an expression is numeric",
+   "Is the expression of type numeric? (– any boolean)"
+  ]
+ },
+ "oct": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Interpret string as octal number (– string numeric)"
+  ]
+ },
+ "odd": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is the closest integer odd or even? (– numeric boolean)"
+  ]
+ },
+ "of": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Separates arguments of 'of' operators: point t of p"
+  ]
+ },
+ "or": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Logical inclusive or (boolean boolean boolean)"
+  ]
+ },
+ "origin": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "The pair (0, 0)"
+  ]
+ },
+ "outer": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Forbid a token in macro bodies and conditionals"
+  ]
+ },
+ "outputfilename": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Name of the output file last written"
+  ]
+ },
+ "outputformat": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Output backend to be used (default: “eps”)"
+  ]
+ },
+ "outputformatoptions": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Configure PNG output backend (default: “”)"
+  ]
+ },
+ "outputtemplate": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Output filename template (default: “%j.%c”)"
+  ]
+ },
+ "pair": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare pair variables, or test whether an expression is a pair",
+   "Is the expression of type pair? (– any boolean)"
+  ]
+ },
+ "path": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare path variables, or test whether an expression is a path",
+   "Is the expression of type path? (– any boolean)"
+  ]
+ },
+ "pathpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Path of a stroked picture component (– picture path)"
+  ]
+ },
+ "pausing": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to display lines on the terminal before they are read"
+  ]
+ },
+ "pc": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One pica in bp units [11.95517]"
+  ]
+ },
+ "pen": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare pen variables, or test whether an expression is a pen",
+   "Is the expression of type pen? (– any boolean)"
+  ]
+ },
+ "pencircle": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "Circular pen of diameter 1"
+  ]
+ },
+ "penoffset": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Point on the pen furthest to the right of the given direction (pair pen pair)"
+  ]
+ },
+ "penpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Pen of a stroked picture component (– picture pen)"
+  ]
+ },
+ "pensquare": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Square pen of height 1 and width 1"
+  ]
+ },
+ "pickup": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Specify new pen for line drawing"
+  ]
+ },
+ "picture": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare picture variables, or test whether an expression is a picture",
+   "Is the expression of type picture? (– any boolean)"
+  ]
+ },
+ "point": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Point on a path given a time value (numeric path pair)"
+  ]
+ },
+ "postcontrol": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "First Bézier control point on path segment starting at the given time (numeric path pair)"
+  ]
+ },
+ "precontrol": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Last Bézier control point on path segment ending at the given time (numeric path pair)"
+  ]
+ },
+ "primary": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Undelimited macro parameter parsed as a primary"
+  ]
+ },
+ "primarydef": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Define a binary operator at primary level: primarydef a op b = … enddef"
+  ]
+ },
+ "prologues": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to output conforming PostScript using built-in fonts"
+  ]
+ },
+ "pt": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "One printer’s point in bp units [0.99626]"
+  ]
+ },
+ "quartercircle": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "First quadrant of a circle of diameter 1"
+  ]
+ },
+ "randomseed": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Seed the random number generator: randomseed := ⟨numeric⟩"
+  ]
+ },
+ "readfrom": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Read a line from file (– string string)"
+  ]
+ },
+ "red": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Equivalent to (1,0,0)"
+  ]
+ },
+ "redpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the first component (– color numeric)"
+  ]
+ },
+ "restoreclipcolor": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Restore the graphics state after clip operations (default: 1)"
+  ]
+ },
+ "reverse": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "‘time’-reversed path, beginning swapped with ending (– path path)"
+  ]
+ },
+ "rgbcolor": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Same as color",
+   "Is the expression of type color? (– any boolean)"
+  ]
+ },
+ "right": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Rightward direction (1, 0)"
+  ]
+ },
+ "rotated": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Rotate counterclockwise a given number of degrees (picture numeric picture)"
+  ]
+ },
+ "round": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Round each component to the nearest integer (– numeric numeric)"
+  ]
+ },
+ "rounded": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "linecap and linejoin value for round joins and end caps [1]"
+  ]
+ },
+ "rt": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Right side of current pen when centered at given coordinate(s) (– numeric numeric)"
+  ]
+ },
+ "save": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Make variables local"
+  ]
+ },
+ "scaled": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Scale all coordinates by the given amount (picture numeric picture)"
+  ]
+ },
+ "scantokens": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Converts a string to a token or token sequence. Provides string to numeric conversion, etc. (– string token)"
+  ]
+ },
+ "secondary": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Undelimited macro parameter parsed as a secondary"
+  ]
+ },
+ "secondarydef": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Define a binary operator at secondary level"
+  ]
+ },
+ "setbounds": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Make a picture lie about its bounding box"
+  ]
+ },
+ "shifted": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Add the given shift amount to each pair of coordinates (picture pair picture)"
+  ]
+ },
+ "shipout": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Low-level command to output a figure"
+  ]
+ },
+ "show": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Print out expressions symbolically"
+  ]
+ },
+ "showdependencies": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Print out all unsolved equations"
+  ]
+ },
+ "showstats": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Show memory usage statistics"
+  ]
+ },
+ "showstopping": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to stop after each show command"
+  ]
+ },
+ "showtoken": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Print an explanation of what a token is"
+  ]
+ },
+ "showvariable": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Print variables symbolically"
+  ]
+ },
+ "sind": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Sine of an angle in degrees (– numeric numeric)"
+  ]
+ },
+ "slanted": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Apply the slanting transformation that maps (𝑥, 𝑦) into (𝑥 + 𝑠𝑦, 𝑦), where 𝑠 is the numeric argument (picture numeric picture)"
+  ]
+ },
+ "special": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Print a string directly in the PostScript output file"
+  ]
+ },
+ "sqrt": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Square root (– numeric numeric)"
+  ]
+ },
+ "squared": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "linecap value for square end caps [2]"
+  ]
+ },
+ "step": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Loop increment: for i = 0 step 2 until 10:"
+  ]
+ },
+ "str": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "String representation for a suffix (– suffix string)"
+  ]
+ },
+ "string": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare string variables, or test whether an expression is a string",
+   "Is the expression of type string? (– any boolean)"
+  ]
+ },
+ "stroked": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is argument a stroked line? (– any boolean)"
+  ]
+ },
+ "subpath": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Portion of a path for given range of time values (pair path path)"
+  ]
+ },
+ "substring": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Substring bounded by given indices (pair string string)"
+  ]
+ },
+ "suffix": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Macro parameter that receives a suffix"
+  ]
+ },
+ "tension": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Path join tension: z0 .. tension 2 .. z1"
+  ]
+ },
+ "tertiary": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Undelimited macro parameter parsed as a tertiary"
+  ]
+ },
+ "tertiarydef": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Define a binary operator at tertiary level"
+  ]
+ },
+ "text": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Macro parameter that receives a token list"
+  ]
+ },
+ "textpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Text of a textual picture component (– picture string)"
+  ]
+ },
+ "textual": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is argument typeset text? (– any boolean)"
+  ]
+ },
+ "thelabel": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "Picture shifted as if to label a point (suffix, picture, pair picture)",
+   "Text positioned as if to label a point (suffix, string, pair picture)"
+  ]
+ },
+ "time": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The number of minutes past midnight when this job started"
+  ]
+ },
+ "top": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Top of current pen when centered at the given coordinate(s) (– numeric numeric)"
+  ]
+ },
+ "tracingall": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Turn on all tracing"
+  ]
+ },
+ "tracingcapsules": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show capsules too"
+  ]
+ },
+ "tracingchoices": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show the control points chosen for paths"
+  ]
+ },
+ "tracingcommands": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show commands and operations as they are performed"
+  ]
+ },
+ "tracingequations": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show each variable when it becomes known"
+  ]
+ },
+ "tracinglostchars": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show characters that aren’t infont"
+  ]
+ },
+ "tracingmacros": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show macros before they are expanded"
+  ]
+ },
+ "tracingnone": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Turn off all tracing"
+  ]
+ },
+ "tracingonline": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show long diagnostics on the terminal"
+  ]
+ },
+ "tracingoutput": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show digitized edges as they are output"
+  ]
+ },
+ "tracingrestores": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show when a variable or internal is restored"
+  ]
+ },
+ "tracingspecs": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show path subdivision when using a polygonal a pen"
+  ]
+ },
+ "tracingstats": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show memory usage at end of job"
+  ]
+ },
+ "tracingtitles": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to show titles online when they appear"
+  ]
+ },
+ "transform": {
+  "kind": "type",
+  "plain": false,
+  "docs": [
+   "Declare transform variables, or test whether an expression is a transform",
+   "Is the argument of type transform? (– any boolean)"
+  ]
+ },
+ "transformed": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Apply the given transform to all coordinates (picture transform picture)"
+  ]
+ },
+ "troffmode": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Set to 1 if a -troff or -T option was given"
+  ]
+ },
+ "true": {
+  "kind": "constant",
+  "plain": false,
+  "docs": [
+   "The boolean value true"
+  ]
+ },
+ "truecorners": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "> 0 to make llcorner etc. ignore setbounds"
+  ]
+ },
+ "ulcorner": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Upper-left corner of bounding box (– picture pair)"
+  ]
+ },
+ "undraw": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Erase a line or a picture"
+  ]
+ },
+ "unfill": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Erase inside a cyclic path"
+  ]
+ },
+ "unfilldraw": {
+  "kind": "command",
+  "plain": true,
+  "docs": [
+   "Erase a cyclic path and its inside"
+  ]
+ },
+ "uniformdeviate": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Random number between zero and the value of the argument (– numeric numeric)"
+  ]
+ },
+ "unitsquare": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "The path (0,0)--(1,0)--(1,1)--(0,1)--cycle"
+  ]
+ },
+ "unitvector": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Rescale a vector so its length is 1 (– pair pair)"
+  ]
+ },
+ "unknown": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Is the value unknown? (– any boolean)"
+  ]
+ },
+ "until": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Loop bound: for i = 0 step 2 until 10:"
+  ]
+ },
+ "up": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Upward direction (0, 1)"
+  ]
+ },
+ "upto": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Same as step 1 until"
+  ]
+ },
+ "urcorner": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Upper-right corner of bounding box (– picture pair)"
+  ]
+ },
+ "vardef": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Define a variable-like macro; its body is an implicit group"
+  ]
+ },
+ "verbatimtex": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "Pass the following TeX up to etex to the TeX preamble"
+  ]
+ },
+ "vppp": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The number of vertical points per pixel for bitmap output"
+  ]
+ },
+ "warningcheck": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "Controls error message when variable value is large"
+  ]
+ },
+ "whatever": {
+  "kind": "operator",
+  "plain": true,
+  "docs": [
+   "Create a new anonymous unknown (– – numeric)"
+  ]
+ },
+ "white": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Equivalent to (1,1,1)"
+  ]
+ },
+ "withcmykcolor": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply CMYK color to drawing command"
+  ]
+ },
+ "withcolor": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply generic color specification to drawing command"
+  ]
+ },
+ "withdots": {
+  "kind": "constant",
+  "plain": true,
+  "docs": [
+   "Dash pattern that produces dotted lines"
+  ]
+ },
+ "withgreyscale": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply greyscale color to drawing command"
+  ]
+ },
+ "within": {
+  "kind": "keyword",
+  "plain": false,
+  "docs": [
+   "for p within ⟨picture⟩: iterate over the components of a picture"
+  ]
+ },
+ "withoutcolor": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Don’t apply any color specification to drawing command"
+  ]
+ },
+ "withpen": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply pen to drawing operation"
+  ]
+ },
+ "withpostscript": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "End raw PostScript code"
+  ]
+ },
+ "withprescript": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Begin raw PostScript code"
+  ]
+ },
+ "withrgbcolor": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Apply RGB color to drawing command"
+  ]
+ },
+ "write": {
+  "kind": "command",
+  "plain": false,
+  "docs": [
+   "Write string to file"
+  ]
+ },
+ "xpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑥 or 𝑡𝑥 component (– pair number)"
+  ]
+ },
+ "xscaled": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Scale all 𝑥 coordinates by the given amount (picture numeric picture)"
+  ]
+ },
+ "xxpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑡𝑥𝑥 entry in transformation matrix (– transform number)"
+  ]
+ },
+ "xypart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑡𝑥𝑦 entry in transformation matrix (– transform number)"
+  ]
+ },
+ "year": {
+  "kind": "internal",
+  "plain": false,
+  "docs": [
+   "The current year (e.g., 1992)"
+  ]
+ },
+ "yellowpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Extract the third component (– cmykcolor numeric)"
+  ]
+ },
+ "ypart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑦 or 𝑡𝑦 component (– pair number)"
+  ]
+ },
+ "yscaled": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Scale all 𝑦 coordinates by the given amount (picture numeric picture)"
+  ]
+ },
+ "yxpart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑡𝑦𝑥 entry in transformation matrix (– transform number)"
+  ]
+ },
+ "yypart": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "𝑡𝑦𝑦 entry in transformation matrix (– transform number)"
+  ]
+ },
+ "z": {
+  "kind": "macro",
+  "plain": true,
+  "docs": [
+   "The pair (x⟨suffix⟩, y⟨suffix⟩) (suffix pair)"
+  ]
+ },
+ "zscaled": {
+  "kind": "operator",
+  "plain": false,
+  "docs": [
+   "Rotate and scale all coordinates so that (1, 0) is mapped into the given pair; i.e., do complex multiplication. (picture pair picture)"
+  ]
+ }
+}
