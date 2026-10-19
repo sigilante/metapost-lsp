@@ -151,3 +151,14 @@ test("unbalanced input does not throw", () => {
     assert.doesNotThrow(() => collectReferences(analyze(URI, text), () => undefined));
   }
 });
+
+test("an unclosed figure runs to the end of the file, covering its selection", () => {
+  // VS Code rejects a document symbol whose selectionRange lies outside its range.
+  for (const text of ["beginfig(53);\n  draw p;", "begingroup beginfig(7); endgroup draw q;"]) {
+    const [fig] = analyze(URI, text).figures;
+    const { start, end } = fig.range;
+    const sel = fig.selectionRange;
+    const le = (a: typeof start, b: typeof start) => a.line < b.line || (a.line === b.line && a.character <= b.character);
+    assert.ok(le(start, sel.start) && le(sel.end, end), `${JSON.stringify(text)}: ${JSON.stringify(fig)}`);
+  }
+});

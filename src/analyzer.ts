@@ -177,9 +177,13 @@ export function analyze(uri: string, text: string): Analysis {
     for (let k = stack.length - 1; k >= 0; k--) {
       if (kinds.includes(stack[k].kind)) {
         // Anything opened inside and never closed ends here too.
-        const [block] = stack.splice(k, stack.length - k);
+        const closed = stack.splice(k, stack.length - k);
+        const [block] = closed;
         const scope: Range = spanRange(block.bodyStart ?? block.open, closer);
         for (const d of block.locals) d.scope = scope;
+        // A figure runs to whatever closes it: its endfig, an outer block's
+        // closer, or the end of the file.
+        for (const b of closed) if (b.figure) b.figure.range = spanRange(b.open, closer);
         if (closer.line > block.open.line) folds.push({ startLine: block.open.line, endLine: closer.line - 1, kind: "region" });
         return block;
       }
@@ -414,8 +418,7 @@ export function analyze(uri: string, text: string): Analysis {
         continue;
       }
       case "endfig": {
-        const block = closeBlock(["figure"], t);
-        if (block?.figure) block.figure.range = spanRange(block.open, t);
+        closeBlock(["figure"], t);
         continue;
       }
       case "if":
